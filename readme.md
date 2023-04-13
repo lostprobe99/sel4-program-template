@@ -9,7 +9,7 @@
 ## 编译运行
 
 ```sh
-cmake .. -G Ninja -C../settings.cmake ../projects/hello -B ${build_directory}
+cmake .. -G Ninja -C../settings.cmake ../projects/${project_name} -B ${build_directory}
 cd ${build_directory}
 ninja
 ./simulate
