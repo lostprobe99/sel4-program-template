@@ -1,5 +1,12 @@
 # seL4程序模板
 
+## 拉取子模块
+
+```sh
+git submodule init
+git submodule update
+```
+
 ## 如何使用
 
 1. 将你的项目放到`projects`目录下
