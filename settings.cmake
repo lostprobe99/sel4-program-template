@@ -1,7 +1,7 @@
 include_guard(GLOBAL)
 
-# set(project_dir "${CMAKE_CURRENT_LIST_DIR}/../../")
 set(project_dir "${CMAKE_CURRENT_LIST_DIR}")
+mark_as_advanced(project_dir)
 message("project_dir=${project_dir}")
 file(GLOB project_modules ${project_dir}/projects/*)
 list(
@@ -13,6 +13,7 @@ list(
         ${project_modules}
 )
 
+# include(${project_dir}/tools/cmake-tool/all.cmake)
 include(application_settings)
 
 set(KernelArch "x86" CACHE STRING "" FORCE)
