@@ -24,7 +24,7 @@ sel4_libs_import_libraries()
 # END sel4 dependencies
 
 # BEGIN custom
-add_executable(${project_name} src/mian.c)
+add_executable(${project_name} src/main.c)
 target_link_libraries(${project_name} sel4muslcsys muslc sel4runtime)
 # END custom
 
