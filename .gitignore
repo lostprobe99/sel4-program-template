@@ -1,3 +1,4 @@
 .sel4_cache
 .vscode
 build
+*build
